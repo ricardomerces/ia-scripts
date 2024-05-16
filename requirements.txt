@@ -1,0 +1,8 @@
+openai
+google-generativeai
+groq
+# torch
+# diffusers
+# transformers
+# accelerate
+# streamlit
