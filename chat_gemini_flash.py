@@ -13,10 +13,7 @@ model = genai.GenerativeModel(ai_model, generation_config=generation_config)
 
 def chat_ai(prompt):
     chat = model.start_chat(
-        history=[
-            {"role": "user", "parts": "Oi, Genai falando!"},
-            {"role": "model", "parts": prompt},
-        ]
+        history=[]
     )
     response = chat.send_message(prompt)
     print(response.text)
